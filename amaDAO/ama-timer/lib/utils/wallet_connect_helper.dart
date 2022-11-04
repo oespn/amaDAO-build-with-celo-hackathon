@@ -94,6 +94,7 @@ class WalletConnectHelper {
   }
 
   Future<bool> initWebSession(context, {int? chainId}) async {
+
     if (!qrCodeModalConnector.connector.connected) {
       try {
         sessionStatus = await qrCodeModalConnector.connect(
